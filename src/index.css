@@ -1,0 +1,39 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Custom styles */
+.search-results-container {
+  @apply max-h-[70vh] overflow-y-auto;
+}
+
+.location-result {
+  @apply flex items-center gap-3 p-4 hover:bg-gray-50 transition-colors cursor-pointer border-b border-gray-100;
+}
+
+.map-container {
+  @apply h-[50vh] md:h-[60vh] lg:h-[70vh] w-full rounded-2xl overflow-hidden;
+}
+
+.mobile-bottom-sheet {
+  @apply fixed bottom-0 left-0 right-0 bg-white rounded-t-3xl shadow-lg transform transition-transform duration-300 ease-in-out;
+}
+
+/* Custom scrollbar */
+.custom-scrollbar {
+  scrollbar-width: thin;
+  scrollbar-color: #E2E8F0 #F8FAFC;
+}
+
+.custom-scrollbar::-webkit-scrollbar {
+  width: 6px;
+}
+
+.custom-scrollbar::-webkit-scrollbar-track {
+  background: #F8FAFC;
+}
+
+.custom-scrollbar::-webkit-scrollbar-thumb {
+  background-color: #E2E8F0;
+  border-radius: 3px;
+}
